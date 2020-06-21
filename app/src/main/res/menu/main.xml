@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/todo"
+        android:icon="@drawable/ic_add_circle_outline_black_24dp"
+        android:tint="#000000"
+        android:title="todo"
+        android:visible="true"
+        tool:showAsAction="always" />
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/search_icon"
+        android:tint="#000000"
+        android:title="search"
+        android:visible="true"
+        tool:showAsAction="ifRoom|collapseActionView" />
+
+    <item
+        android:id="@+id/sort"
+        android:icon="@drawable/ic_sort_black_24dp"
+        android:tint="#000000"
+        android:title="sort"
+        tool:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/sortPriority"
+                android:title="Sort by priority" />
+            <item
+                android:id="@+id/sortTimeCreation"
+                android:title="Sort by time created" />
+        </menu>
+    </item>
+
+</menu>

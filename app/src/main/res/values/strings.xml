@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Todo App</string>
+    <string name="created_on">created On</string>
+    <string name="language_not_supported">Language not supported</string>
+    <string name="cannot_create_task_with_out_title">Cannot create task with out title</string>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <TextView
+        android:id="@+id/title_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="First title"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_toStartOf="@id/checkbox"
+        android:layout_toLeftOf="@id/checkbox"
+        />
+
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_textView"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/subtext"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/subtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_textView"
+        android:paddingLeft="5dp"
+        android:text="second"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/delete_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_delete_black_24dp"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/undo_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/delete_button"
+        android:src="@drawable/ic_undo_black_24dp"
+        android:visibility="gone"
+
+        />
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:layout_below="@id/subtext"
+        android:background="#6666"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+</RelativeLayout>
